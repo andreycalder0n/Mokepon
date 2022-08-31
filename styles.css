@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+
+body{
+    font-family: 'Silkscreen', cursive;
+    background-color: #F9ED69;
+}
+
+#select-mokepon{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#title{
+    color: black;
+    font-size: 36px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+p, h3{
+    text-align: center;
+}
+
+.subtitulo{
+    color: black;
+    font-size: 24px;
+}
+
+.tarjetas{
+    display: flex;
+}
+
+.tarjeta-de-mokepon{
+    width: 150px;
+    height: 150px;
+    background: #F08A5D;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 10px;
+    border: 1px groove black;
+    border-radius: 7px;
+    text-align : center;
+}
+
+.tarjeta-de-mokepon img {
+    width: 80px;
+}
+
+#mokepon{
+    width: 200px;
+    height: 50px;
+    background: #B83B5E;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 10px;
+    border: 1px groove black;
+    border-radius: 7px;
+    font-family: 'Silkscreen', cursive;
+}
+
+#select-attack{
+    flex-direction: column;
+    align-items: center;
+}
+
+#fire{
+    width: 200px;
+    height: 50px;
+    background: #B83B5E;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 10px;
+    border: 1px groove black;
+    border-radius: 7px;
+    font-family: 'Silkscreen', cursive;
+}
+
+#earth{
+    width: 200px;
+    height: 50px;
+    background: #B83B5E;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 10px;
+    border: 1px groove black;
+    border-radius: 7px;
+    font-family: 'Silkscreen', cursive;
+}
+
+#water{
+    width: 200px;
+    height: 50px;
+    background: #B83B5E;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 10px;
+    border: 1px groove black;
+    border-radius: 7px;
+    font-family: 'Silkscreen', cursive;
+}
+
+#resultado-ataque{
+    width: 350px;
+    height: 50px;
+    background: #F08A5D;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 10px;
+    border: 1px groove black;
+    border-radius: 7px;
+    text-align : center;
+}
+
+#reload{
+    width: 150px;
+    height: 50px;
+    background: #6A2C70;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 10px;
+    border: 1px groove black;
+    border-radius: 7px;
+    text-align : center;
+    font-family: 'Silkscreen', cursive;
+}
+
+.columnas{
+    display: grid;
+    grid-template-columns: 250px 250px;
+}
+#reiniciar{
+    flex-direction: column;
+    align-items: center;
+}
+
+.ataques-jugador, .ataques-enemigo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (max-width: 1060px){
+    .tarjetas{
+        flex-direction: column;
+    }
+    .columnas{
+        grid-template-columns: 150px 150px;
+    }
+}
+
+input{
+    display: none;
+}
+input:checked + label{
+    background-color: #6A2C70;
+}
