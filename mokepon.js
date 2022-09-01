@@ -1,36 +1,21 @@
 function selectMokepon(){
-    let inputHipodoge = document.getElementById("Hipodoge").checked;
-    let inputCapipepo = document.getElementById("Capipepo").checked;
-    let inputRatigueya = document.getElementById("Ratigueya").checked;
-    let inputLangotelvis = document.getElementById("Langotelvis").checked;
-    let inputTucapalma = document.getElementById("Tucapalma").checked;
-    let inputPydos = document.getElementById("Pydos").checked;
-    let spanTuMokepon = document.getElementById("tu-mokepon");
-    let spanAlert = document.getElementById("alert");
-
-    if (inputHipodoge){
-        yourMokepon = "Hipodoge";
-        spanTuMokepon.innerHTML = "Hipodoge";
+    if (inputHipodoge.checked){
+        spanTuMokepon.innerHTML = inputHipodoge.id;
     }
-    else if (inputCapipepo){
-        yourMokepon = "Capipepo";
-        spanTuMokepon.innerHTML = "Capipepo";
+    else if (inputCapipepo.checked){
+        spanTuMokepon.innerHTML = inputCapipepo.id;
     }
-    else if (inputRatigueya){
-        yourMokepon = "Ratigueya";
-        spanTuMokepon.innerHTML = "Ratigueya";
+    else if (inputRatigueya.checked){
+        spanTuMokepon.innerHTML = inputRatigueya.id;
     }
-    else if (inputLangotelvis){
-        yourMokepon = "Langotelvis";
-        spanTuMokepon.innerHTML = "Langotelvis";
+    else if (inputLangotelvis.checked){
+        spanTuMokepon.innerHTML = inputLangotelvis.id;
     }
     else if (inputTucapalma){
-        yourMokepon = "Tucapalma";
-        spanTuMokepon.innerHTML = "Tucapalma";
+        spanTuMokepon.innerHTML = inputTucapalma.id;
     }
     else if(inputPydos){
-        yourMokepon = "Pydos";
-        spanTuMokepon.innerHTML = "Pydos";
+        spanTuMokepon.innerHTML = inputPydos.id;
     }
     else{
         spanAlert.innerHTML = "Elige un mokepon, por favor"
@@ -277,6 +262,16 @@ buttonReload.addEventListener("click", reload);
 const buttonMokepon = document.getElementById("mokepon");
 buttonMokepon.addEventListener("click", selectMokepon);
 
+let inputHipodoge;
+let inputCapipepo;
+let inputRatigueya;
+let inputLangotelvis;
+let inputTucapalma;
+let inputPydos;
+
+const spanTuMokepon = document.getElementById("tu-mokepon");
+const spanAlert = document.getElementById("alert");
+
 spanYourAttack = document.getElementById("your-attack");
 
 mokepones.forEach((mokepon) => {
@@ -287,6 +282,13 @@ mokepones.forEach((mokepon) => {
         <img src=${mokepon.look} alt=${mokepon.name}></label><br/>
     `
     sectionCard.innerHTML += optionMokepon;
+
+    inputHipodoge = document.getElementById("Hipodoge");
+    inputCapipepo = document.getElementById("Capipepo");
+    inputRatigueya = document.getElementById("Ratigueya");
+    inputLangotelvis = document.getElementById("Langotelvis");
+    inputTucapalma = document.getElementById("Tucapalma");
+    inputPydos = document.getElementById("Pydos");
 })
 
 
